@@ -6,10 +6,9 @@
 
 ```
 myres/
-├── public/
+├── download/
 │   ├── index.html          # 下载页面
-│   └── downloads/
-│       └── audio-package.zip  # 音频学习包
+│   └── audio-package.zip   # 音频学习包
 ├── vercel.json            # Vercel 部署配置
 └── README.md              # 项目说明
 ```
@@ -53,8 +52,8 @@ myres/
 
 ### 文件服务
 
-- 所有文件通过 `/public/` 路径提供服务
-- 下载文件位于 `/downloads/` 路径下
+- 所有文件通过 `/download/` 路径提供服务
+- 支持所有格式的文件下载
 - 支持直接文件访问和下载
 
 ## 访问地址
@@ -62,13 +61,13 @@ myres/
 部署完成后，您可以通过以下地址访问：
 
 - 主页：`https://your-project.vercel.app/`
-- 直接下载：`https://your-project.vercel.app/downloads/audio-package.zip`
+- 直接下载：`https://your-project.vercel.app/audio-package.zip`
 
 ## 更新文件
 
 要更新下载文件：
 
-1. 替换 `public/downloads/` 目录中的文件
+1. 替换 `download/` 目录中的文件
 2. 提交更改到 Git
 3. Vercel 会自动重新部署
 

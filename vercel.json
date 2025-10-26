@@ -2,18 +2,14 @@
     "version": 2,
     "builds": [
         {
-            "src": "public/**/*",
+            "src": "download/**/*",
             "use": "@vercel/static"
         }
     ],
     "headers": [
         {
-            "source": "/downloads/(.*)",
+            "source": "/(.*)",
             "headers": [
-                {
-                    "key": "Content-Type",
-                    "value": "application/zip"
-                },
                 {
                     "key": "Content-Disposition",
                     "value": "attachment"
